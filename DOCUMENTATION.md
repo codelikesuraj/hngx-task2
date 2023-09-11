@@ -6,7 +6,7 @@
     - <a href="#read">Read A Person</a>
     - <a href="#update">Update A Person</a>
     - <a href="delete">Delete A Person</a>
-- <a href="#errors">Erro Handling</a>
+- <a href="#errors">Error Handling</a>
 
 
 <span id="introduction"></span>
