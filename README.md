@@ -36,6 +36,10 @@ Access the API via the following endpoints and methods
 
 run the command `php artisan test` to run test file located in [PersonEndpointTest.php](./tests/Feature/PersonEndpointTest.php) file
 
+## UML Diagram
+
+<img width="484" alt="image" src="https://github.com/codelikesuraj/hngx-task2/assets/70463535/84bfb48b-e16d-4546-94a8-d9182a5e6f6a">
+
 ## Documentation
 
 Kindly view the [DOCUMENTATION.md](DOCUMENTATION.md) file for more information on request & respose samples and usages.
