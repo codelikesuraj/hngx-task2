@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', [PersonController::class, 'index']);
 Route::get('/{user_id}', [PersonController::class, 'show']);
 Route::post('/', [PersonController::class, 'store']);
 Route::put('/{user_id}', [PersonController::class, 'update']);

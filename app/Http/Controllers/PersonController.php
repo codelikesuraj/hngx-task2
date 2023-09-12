@@ -11,9 +11,13 @@ use Illuminate\Validation\Rule;
 
 class PersonController extends Controller
 {
-    /**
-     * Store a newly created resource in storage.
-     */
+    public function index()
+    {
+        return response()->json([
+            "data" => new PersonCollection(Person::latest()->get())
+        ], 200);
+    }
+
     public function store(Request $request)
     {
         $validator = Validator::make($request->input(), [
@@ -35,9 +39,6 @@ class PersonController extends Controller
         ], 201);
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show($user_id)
     {
         $person = Person::where('id', $user_id)->orWhere('name', $user_id)->first();
@@ -50,9 +51,6 @@ class PersonController extends Controller
         ], 200);
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, $user_id)
     {
         $person = Person::where('id', $user_id)->orWhere('name', $user_id)->first();
@@ -79,9 +77,6 @@ class PersonController extends Controller
         ], 200);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy($user_id)
     {
         $person = Person::where('id', $user_id)->orWhere('name', $user_id)->first();
