@@ -2,15 +2,24 @@
 
 Below is a description on how to run this project locally on your machine
 
-## Setup
+## Setup (local)
 
 -   clone this repository into a folder
 -   changed directory (cd) into cloned folder
 -   run `composer install` to download dependencies
 -   connect to any MySQL database and create a database
--   add database credentials to environment variables (including created DB)
--   run `php artisan migrate` to run migrations (creates necessary tables in database)
--   run `php artisan serve` to start a local server
+-   copy the contents of .env.example file to .env (create it if it doesn't exist)
+-   add/update the following database credentials to environment variables (including created DB)
+    -   DB_CONNECTION=mysql
+    -   DB_HOST=db_host
+    -   DB_PORT=3306
+    -   DB_DATABASE=db_name
+    -   DB_USERNAME=db_user
+    -   DB_PASSWORD=db_user
+-   run the following commands respectively
+    -   `php artisan key:generate` - generates an app key
+    -   `php artisan migrate` to run migrations (creates necessary tables in database)
+    -   `php artisan serve` to run your app on a local php server
 
 ## How to run
 
@@ -25,10 +34,10 @@ Access the API via the following endpoints and methods
 
 ## Tesing
 
-run the command ```php artisan test```
+run the command `php artisan test` to run test file located in [PersonEndpointTest.php](./tests/Feature/PersonEndpointTest.php) file
 
 ## Documentation
 
-Kindly view this resource [DOCUMENTATION.md](DOCUMENTATION.md) for more info on request & respose samples.
+Kindly view the [DOCUMENTATION.md](DOCUMENTATION.md) file for more information on request & respose samples and usages.
 
 ## Live URL: [https://hngx-task2-5bd62a47075a.herokuapp.com/api](https://hngx-task2-5bd62a47075a.herokuapp.com/api)
