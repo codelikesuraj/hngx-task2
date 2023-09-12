@@ -32,7 +32,7 @@ Access the API via the following endpoints and methods
 |PUT|url/api/x|Update data for Person with ID or Name 'x' with json data e.g `{"name":"new xxx"}`|
 |DELETE|url/api/x|Delete data for Person with ID or Name 'x'|
 
-## Tesing
+## Testing
 
 run the command `php artisan test` to run test file located in [PersonEndpointTest.php](./tests/Feature/PersonEndpointTest.php) file
 
