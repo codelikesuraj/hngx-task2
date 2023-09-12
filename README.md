@@ -38,6 +38,8 @@ run the command `php artisan test` to run test file located in [PersonEndpointTe
 
 ## UML Diagram
 
+[View on Google Drive](https://drive.google.com/file/d/1wRxDfNOwWkzjaN4K8J6S--5QwtRF7pGd/view?usp=sharing)
+
 <img width="484" alt="image" src="https://github.com/codelikesuraj/hngx-task2/assets/70463535/84bfb48b-e16d-4546-94a8-d9182a5e6f6a">
 
 ## Documentation
