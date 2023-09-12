@@ -23,6 +23,10 @@ Access the API via the following endpoints and methods
 |PUT|url/api/x|Update data for Person with ID or Name 'x' with json data e.g `{"name":"new xxx"}`|
 |DELETE|url/api/x|Delete data for Person with ID or Name 'x'|
 
+## Tesing
+
+run the command ```php artisan test```
+
 ## Documentation
 
 Kindly view this resource [DOCUMENTATION.md](DOCUMENTATION.md) for more info on request & respose samples.
